@@ -9,9 +9,21 @@ body {
 }
 
 header, footer {
-  background-color: #222;
+  background-color: #1c1c1c;
   text-align: center;
   padding: 1em;
+  color: #00bfa6;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #00bfa6;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 .container {
@@ -30,9 +42,30 @@ section {
 /* Section box */
 section > div {
   background-color: #1a1a1a;
-  padding: 1em;
+  padding: 1.5em;
   flex: 1 1 30%;
-  border-radius: 6px;
+  border-radius: 8px;
+  border: 1px solid #00bfa6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 191, 166, 0.4);
+}
+
+h2 {
+  color: #00bfa6;
+  margin-top: 0;
+}
+
+a {
+  color: #00bfa6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive tweaks */
