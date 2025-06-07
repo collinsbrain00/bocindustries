@@ -108,3 +108,56 @@ a:hover {
     font-size: 1.3rem;
   }
 }
+
+
+/* === Contact Form Styles === */
+/* Contact Form Styling */
+form {
+  background-color: #2c4f4f; /* Darker shade of Xanadu */
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(248, 188, 36, 0.3); /* Yellow glow */
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+form label {
+  color: #F8BC24;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #F58800;
+  border-radius: 4px;
+  background-color: #444;
+  color: white;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #F8BC24;
+  box-shadow: 0 0 5px #F8BC24;
+}
+
+form button {
+  background-color: #F8BC24;
+  color: #266867;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #F58800;
+  color: white;
+}
