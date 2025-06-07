@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us - BOC Industries</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
@@ -24,17 +27,19 @@
     <section>
       <h2>Contact Us</h2>
       <p>We’d love to hear from you! Reach out for inquiries, partnerships, or service requests.</p>
-      <form action="mailto:contact@bocindustries.com" method="post" enctype="text/plain">
-        <label for="name">Full Name:</label><br />
+
+      <!-- 🔗 Formspree contact form -->
+      <form action="https://formspree.io/f/xwpbvged" method="POST">
+        <label for="name"><i class="fas fa-user"></i> Full Name:</label><br />
         <input type="text" id="name" name="name" required /><br /><br />
 
-        <label for="email">Email Address:</label><br />
+        <label for="email"><i class="fas fa-envelope"></i> Your Email:</label><br />
         <input type="email" id="email" name="email" required /><br /><br />
 
-        <label for="message">Message:</label><br />
+        <label for="message"><i class="fas fa-comment"></i> Your Message:</label><br />
         <textarea id="message" name="message" rows="5" required></textarea><br /><br />
 
-        <button type="submit">Send Message</button>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
       </form>
     </section>
   </main>
