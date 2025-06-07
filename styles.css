@@ -199,6 +199,28 @@ form textarea {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* === About Page Specific === */
+.about-list {
+  margin-top: 1em;
+  padding-left: 1em;
+  list-style: none;
+}
+
+.about-list li {
+  margin-bottom: 1em;
+  background-color: #1d2f2f;
+  padding: 1em;
+  border-left: 4px solid #F8BC24;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.about-list i {
+  color: #F58800;
+  margin-right: 0.5em;
+}
+
 form input:focus,
 form textarea:focus {
   outline: none;
