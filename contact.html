@@ -9,6 +9,21 @@
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
+  <script>
+  // Show success message after submit
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function (e) {
+    const btn = form.querySelector("button");
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    setTimeout(() => {
+      btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+      btn.style.backgroundColor = "#266867";
+      btn.style.color = "#fff";
+    }, 2000);
+  });
+</script>
+
 <body>
 
   <header>
